@@ -1,6 +1,12 @@
 # FindMyProf
 For University Student Search For Suitable Professors
 
+# TEAM 
+Jus
+Aura
+Pang
+Run
+
 # Database
 
 ## Input
