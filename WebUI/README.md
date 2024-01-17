@@ -1,0 +1,15 @@
+Color choices
+
+BG:
+#130C28
+#232136
+#311860
+
+Element:
+#F2A471
+#393750
+#FCE5A2
+#54DCEE
+
+Font:
+#F0F6FB
