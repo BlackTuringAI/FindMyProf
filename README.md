@@ -1,11 +1,12 @@
 # FindMyProf
-For University Student Search For Suitable Professors
+For University Students Search For Suitable Professors
 
 # TEAM 
-Jus
-Aura
-Pang
-Run
+1. Jus
+2. Aura
+3. Pang
+4. Booker
+5. CBR
 
 # Database
 
