@@ -1,0 +1,8 @@
+# For Data processing
+
+# For Web UI
+flask
+
+# For Recommendation Engine
+
+
