@@ -20,5 +20,5 @@ For University Students Search For Suitable Professors
 <img width="1193" alt="螢幕截圖 2024-01-13 下午5 08 49" src="https://github.com/BlackTuringAI/FindMyProf/assets/145555112/02f92c52-588a-4415-9596-cdb9687cb42d">
 
 # Data Process
-University offical links hardly ever change for a period of time.
+University offical links hardly ever change for a period of time.  
 Therfore we use manually input for website links and web scraping for profs in corresponding uni links
