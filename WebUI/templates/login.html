@@ -1,0 +1,47 @@
+<!--
+auther: booker
+last_update: 22/01/2024
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/home.css">
+        <link rel="stylesheet" href="../static/login.css">
+        <script src="static/index.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <title>FindMyProf</title>
+    </head>
+    <body>
+        <nav>
+            <h1 id="title">FindMyProf</h1>
+            <div id="toolbar">
+                <a id="Coming" class="toolbar-opt" href="{{ url_for('home') }}" >Home</a>
+                <a id="About" class="toolbar-opt" href="{{ url_for('about') }}">About us</a>
+                <a id="Company" class="toolbar-opt" href="{{ url_for('Company weblink') }}">Company weblink</a>
+            </div>
+        </nav>
+        <div id="main">
+          <div class="image-container">
+            <img src="../static/imgs/login2.png" alt="../static/imgs/login2.png" height="700px" class="login2">
+            <div class="form-container">
+              <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="button" name="button">Login</button>
+              </form>
+            </div>
+          </div>
+          <img src="../static/imgs/login.png" alt="../static/imgs/login.png"height="700px"></img>
+        </div>
+        <footer>
+            <p>>FindMyProf</p>
+            <p>© 2024 Black Turing AI Limited. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
