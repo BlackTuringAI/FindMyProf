@@ -22,3 +22,11 @@ For University Students Search For Suitable Professors
 # Data Process
 - University offical links hardly ever change for a period of time.  
 - Therfore we use manually input for website links and web scraping for profs in corresponding uni links
+
+# Design
+- Choice of color of the background color.
+  
+  - #771011
+  - #ECE603-color clear
+  - #221712-color Oscuro
+
