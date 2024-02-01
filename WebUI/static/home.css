@@ -78,7 +78,7 @@ nav > #toolbar{
     flex-basis: 40%;
 }
 #toolbar > a {
-    font-size: 1.50px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--font1);
 }
