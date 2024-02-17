@@ -30,3 +30,5 @@ For University Students Search For Suitable Professors
   - #ECE603-color clear
   - #221712-color Oscuro
 
+# Demo
+- hkust professors are ready for demo
