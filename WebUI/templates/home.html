@@ -1,59 +1,49 @@
 <!--
 auther: booker
-last_update: 22/01/2024
+last_update: 16/02/2024
 -->
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../static/home.css">
-        <script src="index.js"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-        <title>Black Turing AI - FindMyProf</title>
-    </head>
-    <body>
-        <nav>
-            <h1 id="title">FindMyProf</h1>
-            <div id="toolbar">
-                <a id="Coming" class="toolbar-opt" href="{{ url_for('home') }}" >Home</a>
-                <a id="About" class="toolbar-opt" href="{{ url_for('about') }}">About us</a>
-                <a id="Company" class="toolbar-opt" href="{{ url_for('Company weblink') }}">Company weblink</a>
-            </div>
-        </nav>
-        <div id="main">
-            <div id="upper-half">
-                <div id="Details">
-                    <p>Details</p>
-                </div>
-                <div id="Pic">
-                    <img id="ProfPic" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
-                </div>
-                <div id="Me">Booker</div>
-            </div>
-            <div id="lower-half">
-                <div id="Form">
-                    Form
-                    <!-- <form id="SearchForm" action="search.php" method="post">
-                        <input id="SearchBar" type="text" name="SearchBar" placeholder="Search for a professor">
-                        <input id="SearchButton" type="submit" value="Search">
-                    </form> -->
-                </div>
-                <div id="Ranking-board">
-                    <ul>
-                        <li>Rank N</li>
-                        <li>Rank N</li>
-                        <li>Rank N</li>
-                        <li>Rank N</li>
-                        <li>Rank N</li>
-                        <li>Rank N</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <p>>Black Turing AI - FindMyProf</p>
-            <p>© 2024 Black Turing AI. All rights reserved.</p>
-        </footer>
-    </body>
+	<head>
+		{% include 'root.html' %}
+		<link rel="stylesheet" href="../static/home.css">
+	</head>
+	<body>
+		{% include 'header.html' %}
+		<div id="main">
+			<div id="b0">
+				<h1>Find the right one<br> Be professional</h1>
+				<ul>
+					<li>achievement</li>
+					<li>achievement</li>
+					<li>achievement</li>
+					<li>achievement</li>
+				</ul>
+			</div>
+			<div id="b1">
+				<video control>
+					<source src="../static/video/test_video.mp4" type="video/mp4">
+					Your browser does not support video playing.
+				</video>
+			</div>
+			<div id="b2">
+				<video control>
+					<source src="../static/video/test_video.mp4" type="video/mp4">
+					Your browser does not support video playing.
+				</video>
+			</div>
+			<div id="b3">
+				<h1>Wanna save time?<br>Agency to help you!</h1>
+				<ul>
+					<li>score <img src="https://www.w3schools.com/howto/img_avatar.png"> name</li>
+					<li>score <img src="https://www.w3schools.com/howto/img_avatar.png"> name</li>
+					<li>score <img src="https://www.w3schools.com/howto/img_avatar.png"> name</li>
+					<li>score <img src="https://www.w3schools.com/howto/img_avatar.png"> name</li>
+				</ul>
+			</div>
+		</div>
+
+		{% include 'footer.html' %}
+	</body>
 </html>
