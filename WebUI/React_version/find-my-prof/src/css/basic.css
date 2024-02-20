@@ -1,0 +1,67 @@
+
+:root {
+    --header_height: 70px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    position: fixed;
+    top: 15px;
+    left: 50%;                      /* header居中 */
+    transform: translateX(-50%);    /* header居中 */
+    
+    z-index: 100;                   /* 始终在画面最顶显示 */
+    
+    width: 95%;
+    height: var(--header_height);
+    
+    border-radius: 10px;
+    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, var(--bg3), var(--bg1));
+    opacity: 0.9;                   /* 透明度 */
+    
+    #title {
+        margin: 20px;
+        padding: 0;
+        
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    #toolbar {   /* use flex to make a sub-flex which occupies certain space in its parent */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        margin: 20px;
+        flex-basis: 40%;
+        
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: var(--font1);
+        }
+    }
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: -100px;
+
+    margin: 0;
+    padding: 20px 0;
+
+    width: 100%;
+    /* height: 100px; */
+
+    text-align: center;
+    /* color: #212529; */
+    background-color: var(--element2);
+}

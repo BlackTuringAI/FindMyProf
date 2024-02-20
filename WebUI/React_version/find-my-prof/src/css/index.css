@@ -1,0 +1,19 @@
+/* common params for all files */
+
+
+:root {
+    /* Color choices
+    BG: #130C28 #232136 #311860
+    Element: #F2A471 #393750 #FCE5A2 #54DCEE
+    Font: #F0F6FB */
+    --bg1: #130C28;
+    --bg2: #232136;
+    --bg3: #311860;
+    --element1: #F2A471;
+    --element2: #393750;
+    --element3: #FCE5A2;
+    --element4: #54DCEE;
+    --font1: #F0F6FB;
+
+    --header_space: 120px;
+}

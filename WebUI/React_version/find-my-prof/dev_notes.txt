@@ -1,0 +1,19 @@
+18/02/2024
+auther: booker
+
+react和flask的交互：
+    1. 前端渲染vs后端渲染，选前端
+    2. 前后交互
+        a. 需要由request决定前端渲染什么页面，但flask不能返回组件，因此返回包含代表组件名字的字符串的json，给前端解析、动态import和渲染
+            question:   如何动态加载和渲染？
+            sol:        动态加载用import().then(), 渲染用ReactDOM.render(element, parent_element);
+        b. 数据库和推荐引擎，直接用ajax就好
+    3. possible problem
+        a. question:    由于通过前端的按钮和通过后端的request都是可能的用户跳转的方法，状态转换需要做两份
+            temp sol:   也许仅在搜索/登录时留意状态转换即可
+
+
+当前任务：
+    1. 把Home前端颜色设置好
+    2. 完成router的框架
+    3. 完成其他网页的前端
