@@ -1,14 +1,13 @@
-Two environments need to be configured before running the following code:
-
+Two environments need to be configured before running the following code:<br>
 1.nltk
 Run the following python code:
 
-import nltk
+'''import nltk
 nltk.download('wordnet')
 nltk.download('punkt')
-nltk.download('vader_lexicon')
+nltk.download('vader_lexicon')'''
 
-If the above code fails to run, you can try to manually download the relevant dataset and place it in the appropriate location.
+If the above code fails to run, you can try to manually download the relevant dataset and place it in the appropriate location.<br>
 For example, after creating a folder named wordnet under the path (D:\nltk_data\corpora), you can download and unzip the wordnet dataset, and finally move the dataset to that folder.
 
 2.KAFKA
