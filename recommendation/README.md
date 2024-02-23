@@ -1,6 +1,6 @@
 Two environments need to be configured before running the following code:
 1.nltk
-Run the following python code
+Run the following python code:
 import nltk
 nltk.download('wordnet')
 nltk.download('punkt')
