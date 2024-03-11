@@ -66,11 +66,11 @@ function Form() {
                         <span>Select your desired college</span>
                         <br />
                         <input id="HKU" type="checkbox" name="university" />
-                        <label for="HKU">HKU</label>
+                        <label>HKU</label>
                         <input id="CUHK" type="checkbox" name="university" />
-                        <label for="CUHK">CUHK</label>
+                        <label>CUHK</label>
                         <input id="UST" type="checkbox" name="university" />
-                        <label for="UST">UST</label>
+                        <label>UST</label>
                     </dd>
 
                     <dt><label>Professor: </label></dt>

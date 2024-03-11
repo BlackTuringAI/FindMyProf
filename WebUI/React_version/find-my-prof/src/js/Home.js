@@ -3,7 +3,6 @@ import '../css/Home.css';
 import { Header, Footer } from './basic'
 
 
-
 function Home() {
     return (
 		<div className="Home">
@@ -42,6 +41,7 @@ function B0() {
 function B1() {
 	return (
 		<div id="b1">
+			<h1>Video 1</h1>
 			<video control='true'>
 				<source src={process.env.PUBLIC_URL + "/static/video/test_video.mp4"} type="video/mp4" />
 				Your browser does not support video playing.
@@ -53,6 +53,7 @@ function B1() {
 function B2() {
 	return (
 		<div id="b2">
+			<h1>Video 2</h1>
 			<video control='true'>
 				<source src={process.env.PUBLIC_URL + "/static/video/test_video.mp4"} type="video/mp4" />
 				Your browser does not support video playing.
