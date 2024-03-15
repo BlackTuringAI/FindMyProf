@@ -1,4 +1,4 @@
-import '../css/Search.css';
+import styles from '../css/Search.module.css';
 
 import {Header, Footer} from './basic'
 
@@ -6,7 +6,7 @@ import {Header, Footer} from './basic'
 
 function Search() {
     return (
-        <div className="Search">
+        <div className={styles.Search}>
             <Header />
             <MainContent />
             <Footer />
@@ -16,37 +16,48 @@ function Search() {
 
 function MainContent() {
     return (
-        <div id="main">
-			<div id="lower-half">
-				<ProfProfile />
+        <div id={styles.main}>
+            <div id={styles.upper_half}>
+                <ProfDetails />
+                <ProfPic />
+                <Me />
+            </div>
+			<div id={styles.lower_half}>
                 <Form />
                 <RankingBoard />
 			</div>
 		</div>
     );
 }
-  
-function ProfProfile() {
-    const url = "https://www.w3schools.com/howto/img_avatar.png";
 
+function ProfDetails() {
     return (
-        <div id="upper-half">
-            <div id="Details">
-                <p>Details</p>
-            </div>
-
-            <div id="Pic">
-                <img src={url} alt="Avatar" />
-            </div>
-
-            <div id="Me">Booker</div>
+        <div id={styles.Details}>
+            <p>Details</p>
         </div>
     );
 }
 
+function ProfPic() {
+    const url = "https://www.w3schools.com/howto/img_avatar.png";
+
+    return (
+        <div id={styles.Pic}>
+            <img src={url} alt="Avatar" />
+        </div>
+    );
+}
+
+function Me() {
+    return (
+        <div id={styles.Me}>Booker</div>
+    );
+}
+
+
 function Form() {
     return (
-        <form id="Form" action="/search/submit" method="post">
+        <form id={styles.Form} action="/search/submit" method="post">
             <div>
                 <dl>
                     <dt><label>Field of research: </label></dt>
@@ -62,24 +73,24 @@ function Form() {
                     </dd>
                     
                     <dt><label>University: </label></dt>
-                    <dd id="Uni-opt">
+                    <dd id={styles.Uni_opt}>
                         <span>Select your desired college</span>
                         <br />
-                        <input id="HKU" type="checkbox" name="university" />
+                        <input id={styles.HKU} type="checkbox" name="university" />
                         <label>HKU</label>
-                        <input id="CUHK" type="checkbox" name="university" />
+                        <input id={styles.CUHK} type="checkbox" name="university" />
                         <label>CUHK</label>
-                        <input id="UST" type="checkbox" name="university" />
+                        <input id={styles.UST} type="checkbox" name="university" />
                         <label>UST</label>
                     </dd>
 
                     <dt><label>Professor: </label></dt>
                     <dd>
                         <span>Enter the name of Prof</span>
-                        <input id="Prof-name" type="text" name="prof-name" />
+                        <input id={styles.Prof_name} type="text" name="prof-name" />
                     </dd>
 
-                    <button id="Search-button" type="submit">Search</button>
+                    <button id={styles.Search_button} type="submit">Search</button>
                 </dl>
             </div>
         </form>
@@ -90,20 +101,20 @@ function RankingBoard() {
     const rankings = []; // replace this with actual data
 
     return (
-        <div id="Ranking-board">
+        <div id={styles.Ranking_board}>
             <ul>
                 <li>
-                    <input type="radio" id="option1" name="option" />
+                    <input type="radio" id={styles.option1} name="option" />
                     <label for="option1">Option 1</label>
                     <span>100</span>
                 </li>
                 <li>
-                    <input type="radio" id="option2" name="option" />
+                    <input type="radio" id={styles.option2} name="option" />
                     <label for="option2">Option 2</label>
                     <span>90</span>
                 </li>
                 <li>
-                    <input type="radio" id="option3" name="option" />
+                    <input type="radio" id={styles.option3} name="option" />
                     <label for="option3">Option 3</label>
                     <span>80</span>
                 </li>

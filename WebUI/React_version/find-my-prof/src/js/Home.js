@@ -1,11 +1,11 @@
-import '../css/Home.css';
+import styles from '../css/Home.module.css';
 
 import { Header, Footer } from './basic'
 
 
 function Home() {
     return (
-		<div className="Home">
+		<div className={styles.Home}>
 			<Header />
 			<MainContent />
 			<Footer />
@@ -15,7 +15,7 @@ function Home() {
 
 function MainContent() {
     return (
-        <div id="main">
+        <div id={styles.main}>
 			<B0 />
 			<B1 />
 			<B2 />
@@ -26,7 +26,7 @@ function MainContent() {
 
 function B0() {
 	return (
-		<div id="b0">
+		<div id={styles.b0}>
 			<h1>Find the right one<br /> Be professional</h1>
 			<ul>
 				<li>achievement</li>
@@ -40,7 +40,7 @@ function B0() {
 
 function B1() {
 	return (
-		<div id="b1">
+		<div id={styles.b1}>
 			<h1>Video 1</h1>
 			<video control='true'>
 				<source src={process.env.PUBLIC_URL + "/static/video/test_video.mp4"} type="video/mp4" />
@@ -52,7 +52,7 @@ function B1() {
 
 function B2() {
 	return (
-		<div id="b2">
+		<div id={styles.b2}>
 			<h1>Video 2</h1>
 			<video control='true'>
 				<source src={process.env.PUBLIC_URL + "/static/video/test_video.mp4"} type="video/mp4" />
@@ -64,7 +64,7 @@ function B2() {
 
 function B3() {
 	return (
-		<div id="b3">
+		<div id={styles.b3}>
 			<h1>Wanna save time?<br />Agency to help you!</h1>
 			<ul>
 				<li>score <img src="https://www.w3schools.com/howto/img_avatar.png" /> name</li>

@@ -3,9 +3,8 @@ auther: booker
 last_update: 17/02/2024
 */
 
-
 /* tool bar */
-body {
+.Home {
   position: relative;
 
   margin: 0;
@@ -155,34 +154,34 @@ body {
       overflow: hidden;
       
       li {
-          /* position: relative; */
-  
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-  
-  
-          box-sizing: border-box;
-          margin: 20px auto;
-          padding: 0 20px;
+        /* position: relative; */
 
-      
-          width: 100%;
-          height: 80px;
-      
-          border-radius: 10px;
-      
-          font-size: 30px;
-          background-color: rgb(69, 67, 85);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-          animation: scroll 5s linear infinite;
-  
-          & img {
-              width: 50px;
-              height: 50px;
-          
-              object-fit: contain;
-          }
+
+        box-sizing: border-box;
+        margin: 20px auto;
+        padding: 0 20px;
+
+    
+        width: 100%;
+        height: 80px;
+    
+        border-radius: 10px;
+    
+        font-size: 30px;
+        background-color: rgb(69, 67, 85);
+
+        animation: scroll 5s linear infinite;
+
+        & img {
+          width: 50px;
+          height: 50px;
+      
+          object-fit: contain;
+        }
       }
   }
 }

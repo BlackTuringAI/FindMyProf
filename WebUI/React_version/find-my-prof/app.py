@@ -67,5 +67,5 @@ def home_page():
 if __name__ == '__main__':
     # if os.environ.get('WERKZEUG_RUN_MAIN') != 'true':
     #     build_react()
-    
+    build_react()
     app.run(port = 8080, debug=True)
