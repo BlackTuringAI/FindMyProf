@@ -1,5 +1,5 @@
 import '../css/basic.css';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -7,11 +7,11 @@ function Header() {
         <header>
             <h1 id="title">Black Turing AI</h1>
             <nav id="toolbar">
-                <a id="Home" href="http://127.0.0.1:5000">Home</a>
-                <a id="News" href="">News</a>
-                <a id="About" href="">About Us</a>
+                <Link id="Home" to="/home">Home</Link>
+                <Link id="News" to="/news">News</Link>
+                <Link id="About" to="/about">About Us</Link>
 
-                <a href="http://127.0.0.1:5000/search">temp for search</a>
+                <Link to="/search">temp for search</Link>
             </nav>
         </header>
     );
